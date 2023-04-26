@@ -27,5 +27,5 @@
 val mt = this@MiniAppGatewaySDK::class.java.getMethod(method, *(params.toTypedArray()))
 //Call method with params called from SDK and return data to SDK
 val result = mt.invoke(this@MiniAppGatewaySDK, *(list.toTypedArray())) as? String
-//For example
+//For example\n
 debug webview with chrome devices: [chrome://inspect/devices#devices](url)
