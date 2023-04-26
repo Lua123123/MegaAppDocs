@@ -23,3 +23,7 @@
             return callback?.error()
         }
     }
+# get method corresponding to params 
+val mt = this@MiniAppGatewaySDK::class.java.getMethod(method, *(params.toTypedArray()))
+# call method with params
+val result = mt.invoke(this@MiniAppGatewaySDK, *(list.toTypedArray())) as? String
