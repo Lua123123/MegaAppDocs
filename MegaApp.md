@@ -29,4 +29,4 @@ val mt = this@MiniAppGatewaySDK::class.java.getMethod(method, *(params.toTypedAr
 val result = mt.invoke(this@MiniAppGatewaySDK, *(list.toTypedArray())) as? String
 # For example
 //debug webview with chrome devices
-// [chrome://inspect/devices#devices](url)
+[chrome://inspect/devices#devices](url)
