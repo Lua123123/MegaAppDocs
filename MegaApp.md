@@ -1,4 +1,4 @@
-# Function interact between MegaApp with Native App through SDK (middleware)
+# Function interact between MegaApp with Native App through SDK (middleware) and return data Json String? to 3th through SDK
     @JavascriptInterface
     fun reflectFunction(method: String, args: String): String? {
         try {
