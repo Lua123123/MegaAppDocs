@@ -1,4 +1,4 @@
-# Function interact between MegaApp with Native App through SDK
+# Function interact between MegaApp with Native App through SDK (middleware)
     @JavascriptInterface
     fun reflectFunction(method: String, args: String): String? {
         try {
@@ -23,7 +23,8 @@
             return callback?.error()
         }
     }
-# get method corresponding to params 
+# Get method corresponding to params called from SDK
 val mt = this@MiniAppGatewaySDK::class.java.getMethod(method, *(params.toTypedArray()))
-# call method with params
+# Call method with params called from SDK and return data to SDK
 val result = mt.invoke(this@MiniAppGatewaySDK, *(list.toTypedArray())) as? String
+#
