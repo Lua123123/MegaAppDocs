@@ -56,3 +56,8 @@ override fun register(): String {
                 return MiniAppManagement.register(listJsonFunction = listFunctionProvide.toString())
             }
 ```
+#### Note
+```comment
+if list megaapp's function have function a, function b, function c that list navite's app have function a, function e, function f.
+else return function a. Function b & function c not return.
+```
