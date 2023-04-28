@@ -26,8 +26,9 @@
     }
 ```
 #### Get method corresponding to params called from SDK
+```comment
     val mt = this@MiniAppGatewaySDK::class.java.getMethod(method, *(params.toTypedArray()))
-        
+```
 #### Call method with params called from SDK and return data to SDK
     val result = mt.invoke(this@MiniAppGatewaySDK, *(list.toTypedArray())) as? String
         
