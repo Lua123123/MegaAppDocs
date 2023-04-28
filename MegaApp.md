@@ -30,9 +30,12 @@
     val mt = this@MiniAppGatewaySDK::class.java.getMethod(method, *(params.toTypedArray()))
 ```
 #### Call method with params called from SDK and return data to SDK
+```comment
     val result = mt.invoke(this@MiniAppGatewaySDK, *(list.toTypedArray())) as? String
-        
+```
 #### For example
+```comment
     I have the function "getVodDetail(id: String)", I'm going to call on chrome devices: megaSdk.reflectFunction("getVodDetail", '["61f4f512b22e44fefc5979c0"'])
     with "getVodDetail" is the name function you want to call, and "61f4f512b22e44fefc5979c0" is the params you push into.   
     Debug webview with chrome devices: [chrome://inspect/devices#devices](url)
+```
