@@ -42,4 +42,17 @@
     with "getVodDetail" is the name function you want to call, and "61f4f512b22e44fefc5979c0" is the params you push into.   
     Debug webview with chrome devices: [chrome://inspect/devices#devices](url)
 ```
-
+## Register
+```kotlin
+override fun register(): String {
+                val listFunctionMega = JSONArray(safeArgs.listFunctionMega)
+                val listFunctionNative = mutableListOf("register", "hide", "show", "destroy", "getUserInfo", "getVodDetail")
+                val listFunctionProvide = ArrayList<String>()
+                for (i in 0 until listFunctionMega.length()) {
+                    if (listFunctionNative.contains(listFunctionMega.getString(i))) {
+                        listFunctionProvide.add(listFunctionMega.getString(i))
+                    }
+                }
+                return MiniAppManagement.register(listJsonFunction = listFunctionProvide.toString())
+            }
+```
