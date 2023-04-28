@@ -1,3 +1,6 @@
+## RULE
+![image](https://user-images.githubusercontent.com/88249324/235056155-8b1ae4db-4598-4ecb-89e9-39abe5264910.png)
+
 ## Function interact between MegaApp with Native App through SDK (middleware) and return data Json String? to 3th through SDK
 ```kotlin
     @JavascriptInterface
@@ -39,6 +42,4 @@
     with "getVodDetail" is the name function you want to call, and "61f4f512b22e44fefc5979c0" is the params you push into.   
     Debug webview with chrome devices: [chrome://inspect/devices#devices](url)
 ```
-## RULE
-![image](https://user-images.githubusercontent.com/88249324/235056155-8b1ae4db-4598-4ecb-89e9-39abe5264910.png)
 
