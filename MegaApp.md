@@ -39,3 +39,4 @@
     with "getVodDetail" is the name function you want to call, and "61f4f512b22e44fefc5979c0" is the params you push into.   
     Debug webview with chrome devices: [chrome://inspect/devices#devices](url)
 ```
+![CV](https://user-images.githubusercontent.com/88249324/235054185-dad1beb6-5748-47f6-9960-32548440204e.png)
